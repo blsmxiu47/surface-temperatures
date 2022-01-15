@@ -4,6 +4,7 @@
   "description": "Exploratory GIS app for viewing surface temperatures on Earth",
   "main": "app.js",
   "scripts": {
+    "dev": "lite-server",
     "start": "node service/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
