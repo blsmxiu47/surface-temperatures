@@ -1,0 +1,12 @@
+{
+  "name": "surface-temperatures",
+  "version": "1.0.0",
+  "description": "Exploratory GIS app for viewing surface temperatures on Earth",
+  "main": "app.js",
+  "scripts": {
+    "start": "node service/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
