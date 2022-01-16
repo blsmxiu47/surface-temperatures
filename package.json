@@ -4,16 +4,23 @@
   "description": "Exploratory GIS app for viewing surface temperatures on Earth",
   "main": "app.js",
   "scripts": {
-    "dev": "lite-server",
-    "start": "node service/app.js",
+    "dev": "lite-server -c configs/bs-config.json",
+    "start": "node server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "dotenv": "^12.0.3"
+    "@arcgis/core": "^4.22.2",
+    "dotenv": "^12.0.4"
   }
 }
