@@ -2,7 +2,8 @@
   "name": "surface-temperatures",
   "version": "1.0.0",
   "description": "Exploratory GIS app for viewing surface temperatures on Earth",
-  "main": "app.js",
+  "main": ".src/main.js",
+  "type": "module",
   "scripts": {
     "dev": "lite-server -c configs/bs-config.json",
     "start": "node server/app.js",
