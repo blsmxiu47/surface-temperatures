@@ -1,19 +1,16 @@
-import dotenv from 'dotenv'
+require(["esri/Map", "esri/views/MapView"], function (Map, MapView) {
+  // Can be used with API key; otherwise will prompt login.
+  // esriConfig.apiKey = "";
 
-import esriConfig from '@arcgis/core/config'
-import Map from '@arcgis/core/Map'
-import MapView from '@arcgis/views/MapView'
+  const map = new Map({
+    basemap: "arcgis-topographic" // Basemap layer service
+  });
 
-dotenv.config()
-esriConfig.apiKey = process.env.ARCGIS_API_KEY
+  const view = new MapView({
+    map: map,
+    center: [-118.805, 34.027], // Longitude, latitude
+    zoom: 13, // Zoom level
+    container: "viewDiv" // Div element
+  });
 
-const map = new Map({
-  basemap: 'arcgis-topographic' // Basemap layer service
-})
-
-const view = new MapView({
-  map: map,
-  center: [-118.805, 34.027], // Longitude, latitude
-  zoom: 13, // Zoom level
-  container: 'viewDiv' // Div element
-})
+});
