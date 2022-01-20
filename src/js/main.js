@@ -47,10 +47,10 @@ require([
     container: 'viewDiv' // Div element
   })
 
-  const ocean_surface_temps_layer = new MapImageLayer({
+  const oceanSurfaceTempsLayer = new MapImageLayer({
     url: 'https://new.nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer?transparent=true&format=png8&layers=show%3A4&bbox=-15578640.92640406%2C2182661.2789739748%2C-6557848.596303097%2C7299661.700495453&bboxSR=3857&imageSR=3857&size=922%2C523&f=image'
   })
-  map.add(ocean_surface_temps_layer)
+  map.add(oceanSurfaceTempsLayer)
 
   // const basemapToggle = new BasemapToggle({
   //   view: view,
