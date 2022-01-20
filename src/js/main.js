@@ -48,37 +48,10 @@ require([
     container: "viewDiv" // Div element
   });
 
-  // const us_ocean_surface_temps_layer = new MapImageLayer({
-  //   url: "https://new.nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer/export?transparent=true&format=png8&layers=show%3A3&bbox=-15578640.92640406%2C2182661.2789739748%2C-6557848.596303097%2C7299661.700495453&bboxSR=3857&imageSR=3857&size=922%2C523&f=image"
-  // });
-  // const global_ocean_surface_temps_layer = new MapImageLayer({
-  //   url: "https://new.nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer/4"
-  // });
-  // map.add(global_ocean_surface_temps_layer); // Bad Request
-
-  // Export Params example:
-  //   {url: "https://new.nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer",
-  //   customParameters: {
-  //     "transparent": "true",
-  //     "format": "png8",
-  //     "layers": "show:3",
-  //     "bbox": "-15578640.92640406,2182661.2789739748,-6557848.596303097,7299661.700495453",
-  //     "bboxSR": "3857",
-  //     "imageSR": "3857",
-  //     "size": "922,523",
-  //     "f": "image"
-  //   }}
-  //   fetch("https://new.nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer/export?transparent=true&format=png8&layers=show%3A3&bbox=-15578640.92640406%2C2182661.2789739748%2C-6557848.596303097%2C7299661.700495453&bboxSR=3857&imageSR=3857&size=922%2C523&f=image")
-  //   .then(response => response.blob())
-  //   .then(imageBlob => {
-  //     // Then create a local URL for that image and print it 
-  //     const imageObjectURL = URL.createObjectURL(imageBlob);
-  //     console.log(imageObjectURL);
-  // });
-
-  // https://new.nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer/export?f=image&transparent=true&format=png8&layers=show%253A3&bbox=-15578640.92640406%252C2182661.2789739748%252C-6557848.596303097%252C7299661.700495453&bboxSR=3857&imageSR=3857&size=922%252C523
-  // https://new.nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer/export?transparent=true&format=png8&layers=show%3A3&bbox=-15578640.92640406%2C2182661.2789739748%2C-6557848.596303097%2C7299661.700495453&bboxSR=3857&imageSR=3857&size=922%2C523&f=image
-
+  const us_ocean_surface_temps_layer = new MapImageLayer({
+    url: "https://new.nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer?transparent=true&format=png8&layers=show%3A3&bbox=-15578640.92640406%2C2182661.2789739748%2C-6557848.596303097%2C7299661.700495453&bboxSR=3857&imageSR=3857&size=922%2C523&f=image"
+  });
+  map.add(us_ocean_surface_temps_layer);
 
   // const basemapToggle = new BasemapToggle({
   //   view: view,
