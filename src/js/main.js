@@ -44,7 +44,7 @@ require([
   const view = new MapView({
     map: map,
     center: [-122.3321, 47.6062], // Longitude, latitude
-    zoom: 9, // Zoom level
+    zoom: 4, // Zoom level
     container: "viewDiv" // Div element
   });
 
